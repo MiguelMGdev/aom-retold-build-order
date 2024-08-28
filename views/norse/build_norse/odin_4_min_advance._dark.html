@@ -6,36 +6,7 @@
     <title>AOM RETOLD BUILDER</title>
     <link rel="icon" href="https://static.wikia.nocookie.net/ageofempires/images/3/38/AoMR_Zeus_icon.png" type="image/png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/styles.css" rel="stylesheet">
-    <style>
-        .bg-dark-custom {
-            background-color: #121212 !important;
-        }
-        .text-light-custom {
-            color: #e0e0e0 !important;
-        }
-        .bg-light-custom {
-            background-color: #1f1f1f !important;
-        }
-        .card-dark-custom {
-            background-color: #333 !important;
-            color: #e0e0e0 !important;
-        }
-        .theme-toggle-btn {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #343a40;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            padding: 10px 20px;
-            cursor: pointer;
-        }
-        .theme-toggle-btn:hover {
-            background-color: #495057;
-        }
-    </style>
+    <link href="../../../css/styles.css" rel="stylesheet">
 </head>
 <body class="bg-dark-custom text-light-custom">
     <header class="bg-dark text-white py-3">
@@ -47,7 +18,7 @@
                     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Builds</a>
                     <ul class="dropdown-menu">
                       <li><a class="dropdown-item" href="#">Griegos</a></li>
-                      <li><a class="dropdown-item" href="/views/norse/odin_4_min_advance.html">Nórdicos</a></li>
+                      <li><a class="dropdown-item" href="/views/norse/nordicos.html">Nórdicos</a></li>
                       <li><a class="dropdown-item" href="#">Egipcios</a></li>
                       <li><a class="dropdown-item" href="#">Atlantes</a></li>
                       <li><hr class="dropdown-divider"></li>
@@ -77,7 +48,6 @@
     <section class="bg-dark-custom py-5">
         <div class="container">
             <h2 class="text-center mb-4">Build order</h2>
-            <h3 class="text-left mb-4">Era Arcaica</h3>
             <section>
                 <table id="buildTable" class="table table-dark table-striped">
                   <thead>
@@ -91,54 +61,68 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <tr class="fila_azul"><td></td><td>1</td><td>0</td><td>1</td><td>0</td>
-                        <td style="text-align: left;">1 gatherer <img class="icon_build" src="https://static.wikia.nocookie.net/ageofempires/images/c/c5/AoMR_Gatherer_icon.png"/> a caza | 1 gatherer <img class="icon_build" src="https://static.wikia.nocookie.net/ageofempires/images/c/c5/AoMR_Gatherer_icon.png"/> a oro + 1 <img class="icon_build" src="https://static.wikia.nocookie.net/ageofempires/images/c/cc/AoMR_Ox_Cart_icon.png"/> a caza</td></tr>
-                    <tr class="fila_azul"><td></td><td>1</td><td>0</td><td>1</td><td>0</td>
+                    <!--<tr class="fila_azul"><td>tiempo</td><td>comida</td><td>madera</td><td>oro</td><td>favor</td>-->
+                    <tr class="fila_azul"><td></td><td></td><td></td><td></td><td></td>
+                        <td style="text-align: left;"><img class="icon_build" src="https://static.wikia.nocookie.net/ageofempires/images/7/7d/AoMR_Archaic_Age_icon.png"/> <b>Edad Arcaica</b></td></tr>
+                    <tr class="fila_azul"><td></td><td>0</td><td>0</td><td>0</td><td>0</td>
+                        <td style="text-align: left;">Usar el poder <b>GREAT HUNT</b> <img class="icon_build" src="https://static.wikia.nocookie.net/ageofempires/images/c/c3/AoMR_Great_Hunt_icon.png"/> en la caza</td></tr>
+                    <tr class="fila_azul"><td></td><td>1</td><td>0</td><td>0</td><td>0</td>
+                        <td style="text-align: left;">1 gatherer <img class="icon_build" src="https://static.wikia.nocookie.net/ageofempires/images/c/c5/AoMR_Gatherer_icon.png"/> a caza y el primer buey <img class="icon_build" src="https://static.wikia.nocookie.net/ageofempires/images/c/cc/AoMR_Ox_Cart_icon.png"/> a caza</td></tr>
+                        <tr class="fila_azul"><td></td><td>1</td><td>0</td><td>1</td><td>0</td>
+                            <td style="text-align: left;">1 gatherer <img class="icon_build" src="https://static.wikia.nocookie.net/ageofempires/images/c/c5/AoMR_Gatherer_icon.png"/> al oro y construye 1 buey <img class="icon_build" src="https://static.wikia.nocookie.net/ageofempires/images/c/cc/AoMR_Ox_Cart_icon.png"/> en el oro</td></tr>
+                        <tr class="fila_azul"><td></td><td>1</td><td>1</td><td>1</td><td>0</td>
                         <td style="text-align: left;">1 gatherer <img class="icon_build" src="https://static.wikia.nocookie.net/ageofempires/images/c/c5/AoMR_Gatherer_icon.png"/> construye 1 buey <img class="icon_build" src="https://static.wikia.nocookie.net/ageofempires/images/c/cc/AoMR_Ox_Cart_icon.png"/> junto al bosque</td></tr>
-                    <tr class="fila_azul"><td></td><td>1</td><td>0</td><td>1</td><td>0</td>
-                        <td style="text-align: left;">1 enano <img class="icon_build" src="https://static.wikia.nocookie.net/ageofempires/images/c/c5/AoMR_Gatherer_icon.png"/> al oro</td></tr>
-                                   
-                  
+                    <tr class="fila_azul"><td></td><td>1</td><td>1</td><td>2</td><td>0</td>
+                        <td style="text-align: left;">1 dwarf <img class="icon_build" src="https://static.wikia.nocookie.net/ageofempires/images/2/2b/AoMR_Dwarf_icon.png"/> al oro</td></tr>
+                    <tr class="fila_azul"><td></td><td>1</td><td>1</td><td>2</td><td>0</td>
+                        <td style="text-align: left;">1 ulfsark <img class="icon_build" src="https://static.wikia.nocookie.net/ageofempires/images/7/74/AoMR_Berserk_icon.png"/> construye una casa cerca a una torre</td></tr>
+                    <tr class="fila_azul"><td></td><td>1</td><td>1</td><td>3</td><td>0</td>
+                        <td style="text-align: left;">1 dwarf <img class="icon_build" src="https://static.wikia.nocookie.net/ageofempires/images/2/2b/AoMR_Dwarf_icon.png"/> al oro</td></tr>
+                    <tr class="fila_azul"><td></td><td>2</td><td>1</td><td>3</td><td>0</td>
+                        <td style="text-align: left;">1 gatherer <img class="icon_build" src="https://static.wikia.nocookie.net/ageofempires/images/c/c5/AoMR_Gatherer_icon.png"/> a comida</td></tr>
+                    <tr class="fila_azul"><td></td><td>2</td><td>1</td><td>3</td><td>0</td>
+                        <td style="text-align: left;">Construye un templo <img class="icon_build" src="https://static.wikia.nocookie.net/ageofempires/images/d/d8/AoMR_Temple_icon.png"/></td></tr>                    
+                    <tr class="fila_azul"><td></td><td>3</td><td>1</td><td>3</td><td>0</td>
+                        <td style="text-align: left;">1 gatherer <img class="icon_build" src="https://static.wikia.nocookie.net/ageofempires/images/c/c5/AoMR_Gatherer_icon.png"/> a comida</td></tr>
+                    <tr class="fila_azul"><td></td><td>4</td><td>1</td><td>3</td><td>0</td>
+                        <td style="text-align: left;">1 gatherer <img class="icon_build" src="https://static.wikia.nocookie.net/ageofempires/images/c/c5/AoMR_Gatherer_icon.png"/> a comida</td></tr>
+                    <tr class="fila_azul"><td></td><td>4</td><td>1</td><td>4</td><td>0</td>
+                        <td style="text-align: left;">1 dwarf <img class="icon_build" src="https://static.wikia.nocookie.net/ageofempires/images/2/2b/AoMR_Dwarf_icon.png"/> al oro</td></tr>
+                    <tr class="fila_azul"><td></td><td>5</td><td>1</td><td>4</td><td>0</td>
+                        <td style="text-align: left;">1 gatherer <img class="icon_build" src="https://static.wikia.nocookie.net/ageofempires/images/c/c5/AoMR_Gatherer_icon.png"/> a comida</td></tr>
+                    <tr class="fila_azul"><td></td><td>5</td><td>1</td><td>5</td><td>0</td>
+                        <td style="text-align: left;">1 dwarf <img class="icon_build" src="https://static.wikia.nocookie.net/ageofempires/images/2/2b/AoMR_Dwarf_icon.png"/> al oro</td></tr>
+                    <tr class="fila_azul"><td>2:50</td><td>5</td><td>1</td><td>5</td><td>0</td>
+                        <td style="text-align: left;">Deposita tu comida en el buey <img class="icon_build" src="https://static.wikia.nocookie.net/ageofempires/images/c/cc/AoMR_Ox_Cart_icon.png"/></td></tr>
+                    <tr class="fila_azul"><td></td><td>5</td><td>1</td><td>5</td><td>0</td>
+                        <td style="text-align: left;">Avanza de edad, libre elección</td></tr>
+                    <tr class="fila_azul"><td></td><td>3</td><td>4</td><td>4</td><td>0</td>
+                        <td style="text-align: left;">Cambia 1 gatherer <img class="icon_build" src="https://static.wikia.nocookie.net/ageofempires/images/c/c5/AoMR_Gatherer_icon.png"/> del oro a la madera, envía 2 gatherers <img class="icon_build" src="https://static.wikia.nocookie.net/ageofempires/images/c/c5/AoMR_Gatherer_icon.png"/> de comida a madera</td></tr>
+                    <tr class="fila_azul"><td></td><td>5</td><td>4</td><td>5</td><td>0</td>
+                        <td style="text-align: left;">1 ulfsark <img class="icon_build" src="https://static.wikia.nocookie.net/ageofempires/images/7/74/AoMR_Berserk_icon.png"/> construye una casa</td></tr>
+                    <tr class="fila_azul"><td></td><td></td><td></td><td></td><td></td>
+                        <td style="text-align: left;"><img class="icon_build" src="https://static.wikia.nocookie.net/ageofempires/images/a/a9/AoMR_Classical_Age_icon.png"/> <b>Edad Clásica</b></td></tr>
+                            
                     </tbody>
                 </table>
               </section>
-            <ul class="list-group">
-                <li class="list-group-item">1. Envío del 1er <img class="icon_build" src="https://static.wikia.nocookie.net/ageofempires/images/c/c5/AoMR_Gatherer_icon.png"/> 
-                    para cazar + <img class="icon_build" src="https://static.wikia.nocookie.net/ageofempires/images/c/cc/AoMR_Ox_Cart_icon.png"/> de bueyes a la caza.</li>
-                <li class="list-group-item">2. El 2º aldeano inicial va al oro y construye una carreta de bueyes allí.</li>
-                <li class="list-group-item">3. El 3º aldeano inicial construye una carreta de bueyes junto al bosque.</li>
-                <li class="list-group-item">4. 1º nuevo enano al oro.</li>
-                <li class="list-group-item">5. 2º nuevo recolector de alimentos.</li>
-                <li class="list-group-item">6. Construye una casa con ulfsark en tu torre.</li>
-                <li class="list-group-item">7. Entrena a un nuevo enano para que sea dorado.</li>
-                <li class="list-group-item">8. Nuevo recolector de alimentos.</li>
-                <li class="list-group-item">9. Nuevo enano al oro.</li>
-                <li class="list-group-item">10. Nuevo recolector de alimentos.</li>
-                <li class="list-group-item">11. Construir templo.</li>
-                <li class="list-group-item">12. Nuevo recolector de alimentos.</li>
-                <li class="list-group-item">13. Recolector de alimentos.</li>
-                <li class="list-group-item">14. De enano al oro.</li>
-                <li class="list-group-item">15. Recolector de alimentos.</li>
-                <li class="list-group-item">16. De enano al oro.</li>
-                <li class="list-group-item">17. Cuando tengas 400 alimentos, comience a dejar comida en su carreta de bueyes.</li>
-                <li class="list-group-item">18. Haga clic en avanzar a través de Freyja o Heimdall.</li>
-                <li class="list-group-item">19. Cambia el 1 recolector de oro a madera y envía a 2 recolectores de comida a leña.</li>
-                <li class="list-group-item">20. Macro de aldeanos al avanzar: 5 en comida, 4 en madera, 5 enanos en oro.</li>
-                <li class="list-group-item">21. Haz otra casa con tu ulfsark.</li>
-            </ul>
-            <h3 class="text-left mb-4">Era Clásica</h3>
-            <h3 class="text-left mb-4">Consejos</h3>
         </div>
     </section>
 
-    <footer class="bg-dark text-white py-3">
+    <footer class="bg-dark text-white py-4">
         <div class="container text-center">
-            <a href="https://x.com/HawkslyTW">
-                <img src="https://cdn-icons-png.flaticon.com/512/5969/5969020.png" class="img-fluid" alt="Twitter" style="width: 40px;">
-            </a>
-            <p class="mt-3">Creado por HawkslyTW &copy; 2024. Todos los derechos reservados.</p>
+            <div class="d-flex justify-content-center mb-3">
+                <a href="https://paypal.me/hawkslytw?country.x=PE&locale.x=es_XC" target="_blank" rel="noopener noreferrer">
+                    <img src="https://cdn-icons-png.flaticon.com/512/732/732096.png" class="img-fluid" alt="Paypal" style="width: 40px; margin: 0 10px;">
+                </a>
+                <a href="https://x.com/HawkslyTW" target="_blank" rel="noopener noreferrer">
+                    <img src="https://cdn-icons-png.flaticon.com/512/5969/5969020.png" class="img-fluid" alt="Twitter" style="width: 40px; margin: 0 10px;">
+                </a>
+            </div>
+            <p class="mt-3">Creado por <strong>HawkslyTW</strong> &copy; 2024. Todos los derechos reservados.</p>
         </div>
     </footer>
+    
     <button id="themeToggle" class="theme-toggle-btn">Modo Oscuro</button>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
