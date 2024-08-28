@@ -75,3 +75,15 @@ footer {
     background-color: #003366;
     color: white;
 }
+footer a:hover {
+    color: #ffc107; /* Color dorado al pasar el cursor */
+}
+footer h5 {
+    margin-bottom: 1rem;
+}
+footer p, footer li a {
+    font-size: 0.95rem;
+}
+footer hr {
+    opacity: 0.2; /* Hacer el separador más sutil */
+}
