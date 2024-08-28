@@ -87,3 +87,21 @@ footer p, footer li a {
 footer hr {
     opacity: 0.2; /* Hacer el separador más sutil */
 }
+#scrollTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 50%;
+}
+
+#scrollTopBtn:hover {
+    background-color: #555;
+}
