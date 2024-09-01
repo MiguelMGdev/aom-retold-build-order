@@ -1,0 +1,83 @@
+.bg-dark-custom {
+    background-color: #343a40;
+}
+
+.table td,
+.table th {
+    vertical-align: middle;
+}
+
+.icon_build {
+    height: 24px;
+    margin-right: 8px;
+}
+
+.buildTime {
+    width: 5%;
+}
+
+.btn-sm {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    border-radius: 0.2rem;
+}
+.resource-input {
+    background-color: transparent;
+    color: white;
+    border: none;
+    width: 100%;
+    width: max-content;
+}
+
+.resource-input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.fila_azul {
+    height: 50px;
+}
+
+.icon_build {
+    height: 24px;
+    margin-right: 5px;
+}
+.fila_azul td {
+    vertical-align: middle;
+    height: 50px;
+}
+
+.table th, .table td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.form-control.bg-transparent {
+    background-color: transparent;
+    color: white;
+    border: none;
+    box-shadow: none;
+}
+
+.btn-secondary {
+    width: 100%;
+    padding: 5px;
+    font-size: 12px;
+}
+.text-short{
+    width: auto;
+}
+.build-order-cell {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.build-order-cell img {
+    max-height: 40px;
+}
+.hidden-column {
+    display: none !important;
+}
