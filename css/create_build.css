@@ -36,16 +36,21 @@
 }
 
 .fila_azul {
-    height: 50px;
+    background-color: #343a40;
+    border-bottom: 2px solid #007bff;
 }
 
 .icon_build {
     height: 24px;
     margin-right: 5px;
 }
+
+
 .fila_azul td {
     vertical-align: middle;
     height: 50px;
+    background-color: #343a40;
+    border: none;
 }
 
 .table th, .table td {
@@ -80,4 +85,25 @@
 }
 .hidden-column {
     display: none !important;
+}
+
+.table th.buildTime, .table td.buildTime {
+    width: 10%;
+}
+
+
+.table th:nth-child(2), /* Comida */
+.table th:nth-child(3), /* Madera */
+.table th:nth-child(4), /* Oro */
+.table th:nth-child(5) { /* Favor */
+    width: 5%;
+}
+
+.table td input {
+    width: 100%;
+    max-width: 60px;
+}
+
+.time{
+    width: max-content;
 }

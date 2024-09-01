@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const cell = row.insertCell(i);
             const input = document.createElement('input');
             input.type = 'text';
-            input.className = 'form-control bg-transparent text-white';
+            input.className = 'form-control bg-transparent text-white time';
             cell.appendChild(input);
         }
 
@@ -87,10 +87,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Descargar imagen sin la columna de acciones
     document.getElementById('downloadImageBtn').addEventListener('click', () => {
-        const actionCells = document.querySelectorAll('.action-cell, th:last-child');
-        
         // Ocultar columna de acciones
+        const actionCells = document.querySelectorAll('.action-cell, th:last-child');
         actionCells.forEach(cell => cell.style.display = 'none');
+        
+        // Aplicar estilos para eliminar bordes de cuadrículas
+        document.getElementById('buildTable').classList.add('hide-borders');
 
         html2canvas(document.getElementById('buildTable'), {
             useCORS: true
@@ -99,9 +101,10 @@ document.addEventListener('DOMContentLoaded', () => {
             link.href = canvas.toDataURL('image/png');
             link.download = 'tabla.png';
             link.click();
-            
-            // Mostrar nuevamente columna de acciones
+
+            // Restaurar estilos
             actionCells.forEach(cell => cell.style.display = '');
+            document.getElementById('buildTable').classList.remove('hide-borders');
         });
     });
 });
