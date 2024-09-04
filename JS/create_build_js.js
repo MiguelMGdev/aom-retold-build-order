@@ -13,7 +13,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Inicializar color de borde para las filas existentes
   updateRowBorders();
 
   colorPicker.addEventListener("input", (event) => {
