@@ -1,0 +1,178 @@
+/* General Styles */
+body {
+    background-color: #121212; /* Fondo oscuro general */
+    color: #e0e0e0; /* Texto claro */
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Tabs */
+.nav-tabs .nav-link {
+    background-color: #333;
+    color: #e0e0e0;
+    border: 1px solid #444;
+    border-radius: 0;
+    margin-right: 5px;
+    padding: 10px 15px;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #555;
+    color: #ffffff;
+    border-color: #555;
+}
+
+.nav-tabs .nav-link:hover {
+    background-color: #444;
+    color: #ffffff;
+}
+
+/* Tab Content */
+.tab-content {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #444;
+}
+
+/* Estilo para el contenedor de imágenes de las pestañas de civilizaciones */
+.image-selector {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.image-selector img {
+    width: 60px; /* Ajusta el tamaño a 100px, puedes cambiarlo según sea necesario */
+    height: auto;
+    cursor: pointer;
+    margin: 5px;
+    border: 2px solid #333; /* Borde para distinguir las imágenes */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.image-selector img:hover {
+    border-color: #555;
+    transform: scale(1.1); /* Aumenta la imagen un 10% al pasar el ratón sobre ella */
+}
+
+/* Estilos para imágenes dentro de las celdas de la tabla */
+.custom-table td img,
+.custom-table th img {
+    width: 30px; /* Tamaño uniforme para las imágenes dentro de la tabla */
+    height: auto; /* Mantener la proporción de la imagen */
+    vertical-align: middle; /* Alinea verticalmente con el texto */
+    margin-left: 8px; /* Espacio entre el texto y la imagen */
+}
+
+/* Estilos para las imágenes arrastradas (para asegurar consistencia) */
+.dragged-image {
+    width: 30px; /* Tamaño igual al de las imágenes en las celdas de la tabla */
+    height: auto; /* Mantener la proporción de la imagen */
+    vertical-align: middle; /* Alinea verticalmente con el texto */
+    border: 1px solid #333; /* Borde para que coincida con el estilo */
+    border-radius: 5px; /* Esquinas redondeadas */
+}
+
+.image-selector img:hover {
+    border-color: #555;
+    transform: scale(1.5);
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+/* Estilos generales de la tabla */
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: #2a2a2a; /* Fondo plomo para la tabla */
+    color: #e0e0e0; /* Texto blanco */
+    border-radius: 5px;
+    overflow: hidden; /* Esconde bordes redondeados */
+}
+
+/* Encabezado de la tabla */
+.custom-table th {
+    border: none; /* Eliminar bordes excepto el inferior */
+    padding: 12px;
+    text-align: center; /* Alinear el texto e imágenes al centro */
+    vertical-align: middle; /* Alinear verticalmente al centro */
+    background-color: #333; /* Fondo oscuro para encabezados */
+    color: #ffffff; /* Texto blanco para encabezados */
+}
+
+/* Alineación específica para el encabezado de la columna 6 */
+.custom-table th:nth-child(6) {
+    text-align: center; /* Alinear al centro */
+}
+
+/* Encabezado de la columna 6 */
+.custom-table th img {
+    display: block; /* Asegurar que la imagen se muestre en un bloque separado */
+    margin: 0 auto; /* Centrar la imagen horizontalmente */
+    max-width: 100%; /* Ajustar el tamaño de la imagen para que no sobrepase el tamaño de la celda */
+}
+
+/* Estilos para celdas del cuerpo */
+.custom-table td {
+    padding: 12px;
+    text-align: center; /* Centrar el contenido de las celdas */
+    background-color: #2a2a2a; /* Fondo plomo para las celdas */
+    color: #e0e0e0; /* Texto blanco */
+}
+
+/* Alineación específica para la columna 6 */
+.custom-table td:nth-child(6),
+.custom-table th:nth-child(6) {
+    text-align: center; /* Alinear el contenido de la columna 6 a la izquierda */
+}
+
+/* Borde inferior de las filas */
+.custom-table tbody tr {
+    border-bottom: 3px solid #0000ff; /* Color del borde inferior de las filas */
+}
+
+/* Estilo del contenido editable */
+.editable {
+    outline: none; /* Eliminar el borde de enfoque por defecto */
+}
+
+/* Estilo para el input de texto editable */
+.input-text {
+    width: 100%;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 6px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+/* Estilo general para celdas editables */
+.editable {
+    white-space: nowrap; /* Asegura que el texto e imágenes estén en una sola línea */
+}
+
+/* Estilo para imágenes en celdas de la tabla */
+.custom-table td img,
+.custom-table th img {
+    vertical-align: middle; /* Alinea verticalmente con el texto */
+    margin-left: 8px; /* Espacio entre el texto y la imagen */
+}
+
+/* Estilo para celdas con clase 'resources' */
+.resources {
+    width: 6%;
+    text-align: center;
+}
+
+.resources td,
+.resources th {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-table tbody tr:hover {
+    background-color: #333; /* Fondo más claro al pasar el mouse sobre una fila */
+}
