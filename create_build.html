@@ -65,8 +65,10 @@
             <div class="tab-pane fade" id="nordicos" role="tabpanel" aria-labelledby="nordicos-tab"></div>
             <div class="tab-pane fade" id="atlantes" role="tabpanel" aria-labelledby="atlantes-tab"></div>
         </div>
-        <button type="button" id="scrollTopBtn" class="btn btn-light" onclick="scrollToTop()" title="Volver arriba" style="position: fixed; bottom: 20px; right: 20px; border-radius: 50%; border: none; background-color: #ffffff; box-shadow: 0 4px 8px rgba(0,0,0,0.2); padding: 8px; z-index: 1000;">
-            <img src="https://cdn-icons-png.flaticon.com/512/992/992703.png" alt="Scroll to Top" style="width: 30px; height: auto;">
+        <button type="button" id="scrollTopBtn" class="btn btn-light" onclick="scrollToTop()" title="Volver arriba"
+            style="position: fixed; bottom: 20px; right: 20px; border-radius: 50%; border: none; background-color: #ffffff; box-shadow: 0 4px 8px rgba(0,0,0,0.2); padding: 8px; z-index: 1000;">
+            <img src="https://cdn-icons-png.flaticon.com/512/992/992703.png" alt="Scroll to Top"
+                style="width: 30px; height: auto;">
         </button>
         <div style="margin-top: 20px;"></div>
         <div class="container">
@@ -76,6 +78,8 @@
                 <input type="text" id="colorCode" value="#0000ff" readonly>
             </div>
             <button id="addRowBtn" class="btn btn-primary mb-3">Añadir Fila</button>
+            <button id="download-btn" class="btn btn-primary mb-3">Descargar build order como imagen</button>
+
             <table class="table custom-table">
                 <thead>
                     <tr>
@@ -144,6 +148,8 @@
             </div>
         </footer>
         <script src="/JS/botton_up.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
+
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -154,7 +160,7 @@
                 tabs.forEach(tab => {
                     tab.addEventListener('click', () => {
                         const tabId = tab.getAttribute('href').substring(
-                        1); // Obtén el ID de la pestaña
+                            1); // Obtén el ID de la pestaña
                         loadImages(tabId);
                     });
                 });
@@ -191,6 +197,15 @@
             document.querySelectorAll('.image-selector img').forEach(img => {
                 img.addEventListener('dragstart', (event) => {
                     event.dataTransfer.setData('text/plain', event.target.src);
+                });
+            });
+            document.getElementById('download-btn').addEventListener('click', () => {
+                html2canvas(document.querySelector('.custom-table')).then(canvas => {
+                    // Crear un enlace para descargar la imagen
+                    const link = document.createElement('a');
+                    link.href = canvas.toDataURL('image/png'); // Convertir canvas a data URL
+                    link.download = 'tabla.png'; // Nombre del archivo de imagen
+                    link.click(); // Descargar la imagen
                 });
             });
         </script>
