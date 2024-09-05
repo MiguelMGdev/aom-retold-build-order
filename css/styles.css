@@ -76,7 +76,7 @@ footer {
     color: white;
 }
 footer a:hover {
-    color: #ffc107; /* Color dorado al pasar el cursor */
+    color: #ffc107;
 }
 footer h5 {
     margin-bottom: 1rem;
@@ -85,7 +85,7 @@ footer p, footer li a {
     font-size: 0.95rem;
 }
 footer hr {
-    opacity: 0.2; /* Hacer el separador más sutil */
+    opacity: 0.2;
 }
 #scrollTopBtn {
     position: fixed;
@@ -95,13 +95,102 @@ footer hr {
     font-size: 18px;
     border: none;
     outline: none;
-    background-color: #007bff;
+    background-color: #ffffff;
     color: white;
     cursor: pointer;
     padding: 10px 15px;
     border-radius: 50%;
+    width: 6 px;
+    height: 6 px;
 }
 
 #scrollTopBtn:hover {
     background-color: #555;
+}
+.hover-zoom:hover img {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+.carousel{
+    width: 500px;
+    height: 500px;
+}
+.card-img-top{
+    padding: 15px;
+    width: max-content;
+}
+
+/* Limitar el ancho del contenedor de los cards */
+.card-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Ajustes para los cards individuales */
+.custom-card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #333;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Efecto de iluminación en hover */
+.custom-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px 5px rgba(224, 226, 55, 0.4), 0 6px 12px rgba(0, 0, 0, 0.2);
+    background-color: #696868; /* Opción para cambiar ligeramente el color de fondo en hover */
+}
+
+/* Imagen centrada dentro del card */
+.centered-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.card-title, .card-text {
+    font-size: 1rem;
+    color: #fff;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-link {
+    text-decoration: none;
+    color: #ffca28;
+    font-weight: bold;
+}
+
+.card-link:hover {
+    color: #ffc107;
+    text-decoration: underline;
+}
+
+.author-link {
+    color: #ffca28;
+}
+
+.author-link:hover {
+    color: #ffc107;
+    text-decoration: underline;
+}
+
+.card-footer {
+    background-color: #444;
+    border-top: 1px solid #555;
+    padding: 0.75rem 1rem;
+    text-align: right;
 }
