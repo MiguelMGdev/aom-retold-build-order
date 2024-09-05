@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AOM RETOLD BUILDER</title>
+    <link rel="icon" href="https://static.wikia.nocookie.net/ageofempires/images/3/38/AoMR_Zeus_icon.png"
+        type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/styles.css" rel="stylesheet">
+    <link href="../../css/create_build_css.css" rel="stylesheet">
+</head>
+
+<body class="bg-dark-custom text-light-custom">
+    <header class="bg-dark text-white py-3 fixed-top">
+        <div class="container">
+            <h1 class="text-center">Age of Mythology Retold Builder</h1>
+            <nav class="nav justify-content-center">
+                <a class="nav-link text-white" href="../../../index.html">Inicio</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                        aria-expanded="false">Builds</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Griegos</a></li>
+                        <li><a class="dropdown-item" href="../nordicos.html">Nórdicos</a></li>
+                        <li><a class="dropdown-item" href="#">Egipcios</a></li>
+                        <li><a class="dropdown-item" href="#">Atlantes</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="../../build.html">Todas las mitologías</a></li>
+                    </ul>
+                </li>
+                <a class="nav-link text-white" href="../../create_build.html">Crear Build Order</a>
+                <a class="nav-link text-white" href="https://www.youtube.com/@ageofempires/featured" target="_blank"
+                    rel="noopener noreferrer">Trailers</a>
+                <a class="nav-link text-white"
+                    href="https://store.steampowered.com/app/1934680/Age_of_Mythology_Retold/" target="_blank"
+                    rel="noopener noreferrer">Descargar</a>
+            </nav>
+    </header>
+    <div style="margin-top: 120px;"></div>
+    <section id="trailer" class="trailer bg-light-custom py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Build Starter Loki</h2>
+            <div class="d-flex justify-content-center">
+                
+            </div>
+            <p class="lead">Dios mayor: <img
+                    src="https://static.wikia.nocookie.net/ageofempires/images/1/1f/AoMR_Loki_icon.png"
+                    style="width: 50px; height:auto" /> Loki</p>
+            <p class="lead">Autor: @HawkslyTW</p>
+        </div>
+    </section>
+    <button type="button" id="scrollTopBtn" class="btn btn-light" onclick="scrollToTop()" title="Volver arriba"
+        style="position: fixed; bottom: 20px; right: 20px; border-radius: 50%; border: none; background-color: #ffffff; box-shadow: 0 4px 8px rgba(0,0,0,0.2); padding: 8px; z-index: 1000;">
+        <img src="https://cdn-icons-png.flaticon.com/512/992/992703.png" alt="Scroll to Top"
+            style="width: 30px; height: auto;">
+    </button>
+    <section class="bg-dark-custom py-5">
+        <div class="container">
+            <section>
+                <table class="table custom-table">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="resources"><img src="/assets/hud/timetobuild.png"
+                                    alt="Time to Build">
+                            </th>
+                            <th scope="col" class="resources"><img src="/assets/hud/FoodAOM.png" alt="Food"></th>
+                            <th scope="col" class="resources"><img src="/assets/hud/WoodAOM.png" alt="Wood"></th>
+                            <th scope="col" class="resources"><img src="/assets/hud/GoldAOM.png" alt="Gold"></th>
+                            <th scope="col" class="resources"><img src="/assets/hud/FavorAOM.png" alt="Favor"></th>
+                            <th scope="col" class="editable dragover" ><b class="dragover">BUILD
+                                    ORDER</b></th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                        <tr style="border-bottom-color: rgb(71, 255, 252);">
+                            <th scope="row" class="editable resources" ></th>
+                            <td class="editable resources" ></td>
+                            <td class="editable resources" ></td>
+                            <td class="editable resources" ></td>
+                            <td class="editable resources" ></td>
+                            <td class="editable dragover" ><img class="icon_build"
+                                src="https://static.wikia.nocookie.net/ageofempires/images/7/7d/AoMR_Archaic_Age_icon.png" /><b>Edad Arcaica</b></td>
+                        </tr>
+                        <tr style="border-bottom-color: rgb(71, 255, 252);">
+                            <th scope="row" class="editable resources" ></th>
+                            <td class="editable resources" >2</td>
+                            <td class="editable resources" ></td>
+                            <td class="editable resources" ></td>
+                            <td class="editable resources" ></td>
+                            <td class="editable dragover" >2 x<img
+                                    src="https://aomretold-builder.netlify.app/assets/nordicos/villager_norse_icon.png"
+                                    draggable="true">&nbsp;y 1<img
+                                    src="https://aomretold-builder.netlify.app/assets/nordicos/ox_cart_icon.png"
+                                    draggable="true" class="dragging dragover">&nbsp;a caza</td>
+                        </tr>
+                        <tr style="border-bottom-color: rgb(71, 255, 252);">
+                            <th scope="row" class="editable resources" ></th>
+                            <td class="editable resources" >2</td>
+                            <td class="editable resources" >1</td>
+                            <td class="editable resources" ></td>
+                            <td class="editable resources" ></td>
+                            <td class="editable dragover" >1 x&nbsp;<img
+                                    src="https://aomretold-builder.netlify.app/assets/nordicos/villager_norse_icon.png"
+                                    draggable="true">&nbsp;construye 1<img
+                                    src="https://aomretold-builder.netlify.app/assets/nordicos/ox_cart_icon.png"
+                                    draggable="true" style="display: inline; margin-left: 8px;">&nbsp;en el oro y
+                                1&nbsp;<img src="https://aomretold-builder.netlify.app/assets/nordicos/ox_cart_icon.png"
+                                    draggable="true" class="dragging dragover"
+                                    style="display: inline; margin-left: 8px;">&nbsp;en el bosque y se va a madera</td>
+                        </tr>
+                        <tr style="border-bottom-color: rgb(71, 255, 252);">
+                            <th scope="row" class="editable resources" ></th>
+                            <td class="editable resources" >2</td>
+                            <td class="editable resources" >1</td>
+                            <td class="editable resources" >1</td>
+                            <td class="editable resources" ></td>
+                            <td class="editable dragover" >1 x&nbsp;<img
+                                    src="https://aomretold-builder.netlify.app/assets/nordicos/villager_dwarf_icon.png"
+                                    draggable="true">&nbsp;a oro y 1 x&nbsp;<img
+                                    src="https://aomretold-builder.netlify.app/assets/nordicos/berserk_icon.png"
+                                    draggable="true">&nbsp;construye 1 casa</td>
+                        </tr>
+                        <tr style="border-bottom-color: rgb(71, 255, 252);">
+                            <th scope="row" class="editable resources" ></th>
+                            <td class="editable resources" >4</td>
+                            <td class="editable resources" >1</td>
+                            <td class="editable resources" >1</td>
+                            <td class="editable resources" ></td>
+                            <td class="editable dragover" >2 x<img
+                                    src="https://aomretold-builder.netlify.app/assets/nordicos/villager_norse_icon.png"
+                                    draggable="true" class="dragover dragging">&nbsp;a caza</td>
+                        </tr>
+                        <tr style="border-bottom-color: rgb(71, 255, 252);">
+                            <th scope="row" class="editable resources" ></th>
+                            <td class="editable resources" >4</td>
+                            <td class="editable resources" >1</td>
+                            <td class="editable resources" >2</td>
+                            <td class="editable resources" ></td>
+                            <td class="editable dragover" >1 x&nbsp;<img
+                                    src="https://aomretold-builder.netlify.app/assets/nordicos/villager_dwarf_icon.png"
+                                    draggable="true" class="dragover">&nbsp;a oro</td>
+                        </tr>
+                        <tr style="border-bottom-color: rgb(71, 255, 252);">
+                            <th scope="row" class="editable resources" ></th>
+                            <td class="editable resources" >6</td>
+                            <td class="editable resources" >1</td>
+                            <td class="editable resources" >2</td>
+                            <td class="editable resources" ></td>
+                            <td class="editable dragover" >2 x<img
+                                    src="https://aomretold-builder.netlify.app/assets/nordicos/villager_norse_icon.png"
+                                    draggable="true">&nbsp;a caza</td>
+                        </tr>
+                        <tr style="border-bottom-color: rgb(71, 255, 252);">
+                            <th scope="row" class="editable resources" ></th>
+                            <td class="editable resources" >6</td>
+                            <td class="editable resources" >1</td>
+                            <td class="editable resources" >3</td>
+                            <td class="editable resources" ></td>
+                            <td class="editable dragover" >1 x&nbsp;<img
+                                    src="https://aomretold-builder.netlify.app/assets/nordicos/villager_dwarf_icon.png"
+                                    draggable="true">&nbsp;a oro</td>
+                        </tr>
+                        <tr style="border-bottom-color: rgb(71, 255, 252);">
+                            <th scope="row" class="editable resources" ></th>
+                            <td class="editable resources" >8</td>
+                            <td class="editable resources" >1</td>
+                            <td class="editable resources" >3</td>
+                            <td class="editable resources" ></td>
+                            <td class="editable dragover" >2 x<img
+                                    src="https://aomretold-builder.netlify.app/assets/nordicos/villager_norse_icon.png"
+                                    draggable="true" class="dragover">&nbsp;a caza</td>
+                        </tr>
+                        <tr style="border-bottom-color: rgb(71, 255, 252);">
+                            <th scope="row" class="editable resources" ></th>
+                            <td class="editable resources" >8</td>
+                            <td class="editable resources" >1</td>
+                            <td class="editable resources" >3</td>
+                            <td class="editable resources" ></td>
+                            <td class="editable" >1 x&nbsp;<img
+                                    src="https://aomretold-builder.netlify.app/assets/nordicos/berserk_icon.png"
+                                    draggable="true">&nbsp;construye el templo</td>
+                        </tr>
+                        <tr style="border-bottom-color: rgb(71, 255, 252);">
+                            <th scope="row" class="editable resources" ></th>
+                            <td class="editable resources" >9</td>
+                            <td class="editable resources" >1</td>
+                            <td class="editable resources" >3</td>
+                            <td class="editable resources" ></td>
+                            <td class="editable dragover" >1 x<img
+                                    src="https://aomretold-builder.netlify.app/assets/nordicos/villager_norse_icon.png"
+                                    draggable="true" class="dragover">&nbsp;a caza</td>
+                        </tr>
+                        <tr style="border-bottom-color: rgb(71, 255, 252);">
+                            <th scope="row" class="editable resources" ></th>
+                            <td class="editable resources" >9</td>
+                            <td class="editable resources" >2</td>
+                            <td class="editable resources" >3</td>
+                            <td class="editable resources" ></td>
+                            <td class="editable" >1 x<img
+                                    src="https://aomretold-builder.netlify.app/assets/nordicos/villager_norse_icon.png"
+                                    draggable="true" class="dragover">&nbsp;a madera</td>
+                        </tr>
+                        <tr style="border-bottom-color: rgb(71, 255, 252);">
+                            <th scope="row" class="editable resources" ></th>
+                            <td class="editable resources" >6</td>
+                            <td class="editable resources" >5</td>
+                            <td class="editable resources" >3</td>
+                            <td class="editable resources" ></td>
+                            <td class="editable" ><b>Avanza de edad</b></td>
+                        </tr>
+                        <tr style="border-bottom-color: rgb(71, 255, 252);">
+                            <th scope="row" class="editable resources" ></th>
+                            <td class="editable resources" >6</td>
+                            <td class="editable resources" >5</td>
+                            <td class="editable resources" >3</td>
+                            <td class="editable resources" >2</td>
+                            <td class="editable" >2 x<img
+                                    src="https://aomretold-builder.netlify.app/assets/nordicos/hersir_icon.png"
+                                    draggable="true">&nbsp;y 1 x&nbsp;<img
+                                    src="https://aomretold-builder.netlify.app/assets/nordicos/berserk_icon.png"
+                                    draggable="true">&nbsp;construye 1 casa</td>
+                        </tr>
+                        <tr style="border-bottom-color: rgb(71, 255, 252);">
+                            <th scope="row" class="editable resources" >3:56</th>
+                            <td class="editable resources" ></td>
+                            <td class="editable resources" ></td>
+                            <td class="editable resources" ></td>
+                            <td class="editable resources" ></td>
+                            <td class="editable" ><img class="icon_build"
+                                src="https://static.wikia.nocookie.net/ageofempires/images/a/a9/AoMR_Classical_Age_icon.png" />
+                            <b>Edad Clásica</b></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h5>Información</h5>
+                    <p>Página web creada sin fines de lucro, con intención de promover los RTS y facilitar su
+                        aprendizaje.</p>
+                    <b>
+                        <a href="../../sobre_nosotros.html" class="text-white text-decoration-none">
+                            Sobre nosotros
+                        </a>
+                    </b>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h5>Contacto</h5>
+                    <ul class="list-unstyled">
+                        <a href="mailto:miguelguillen24mg@gmail.com" class="text-white text-decoration-none">
+                            <b>Correo: </b>miguelguillen24mg@gmail.com
+                        </a>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Derechos de Autor</h5>
+                    <p>Toda la información es recopilada de sitios web, videos de YouTube, los derechos del juego,
+                        recursos como imágenes, videos y todo lo relacionado a
+                        Age of Mythology son propiedad de Microsoft.</p>
+                </div>
+            </div>
+
+            <hr class="bg-white">
+            <div class="d-flex justify-content-center mb-3">
+                <a href="https://www.twitch.tv/hawkslytw" target="_blank" rel="noopener noreferrer">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733577.png " class="img-fluid" alt="Twitch"
+                        style="width: 40px; margin: 0 10px;">
+                </a>
+                <a href="https://x.com/HawkslyTW" target="_blank" rel="noopener noreferrer">
+                    <img src="https://cdn-icons-png.flaticon.com/512/5969/5969020.png" class="img-fluid" alt="Twitter"
+                        style="width: 40px; margin: 0 10px;">
+                </a>
+                <a href="https://paypal.me/GuillenMMA?country.x=PE&locale.x=es_XC" target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="https://cdn-icons-png.flaticon.com/512/732/732096.png" class="img-fluid" alt="Paypal"
+                        style="width: 40px; margin: 0 10px;">
+                </a>
+            </div>
+            <p class="text-center mb-0">Creado por <strong>HawkslyTW</strong> &copy; 2024. Todos los derechos
+                reservados.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../JS/botton_up.js"></script>
+</body>
+
+</html>

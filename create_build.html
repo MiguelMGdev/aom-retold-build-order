@@ -42,6 +42,36 @@
         </div>
     </header>
     <div style="margin-top: 180px;"></div>
+    <div class="container">
+
+
+        <table class="table custom-table">
+            <thead>
+                <tr>
+                    <th scope="col" class="resources"><img src="/assets/hud/timetobuild.png" alt="Time to Build">
+                    </th>
+                    <th scope="col" class="resources"><img src="/assets/hud/FoodAOM.png" alt="Food"></th>
+                    <th scope="col" class="resources"><img src="/assets/hud/WoodAOM.png" alt="Wood"></th>
+                    <th scope="col" class="resources"><img src="/assets/hud/GoldAOM.png" alt="Gold"></th>
+                    <th scope="col" class="resources"><img src="/assets/hud/FavorAOM.png" alt="Favor"></th>
+                    <th scope="col" class="editable" contenteditable="true"><b>BUILD ORDER</b></th>
+                </tr>
+            </thead>
+            <tbody class="table-group-divider">
+
+            </tbody>
+        </table>
+    </div>
+    <div style="margin-top: 100px;"></div>
+    <div class="container" style="margin-bottom: 20px;">
+        <label for="colorPicker">Color del borde inferior:</label>
+        <input type="color" id="colorPicker" value="#0000ff">
+        <input type="text" id="colorCode" value="#0000ff" readonly>
+    </div>
+    <div class="container">
+        <button id="addRowBtn" class="btn btn-primary mb-3">Añadir Fila</button>
+        <button id="download-btn" class="btn btn-primary mb-3">Descargar build order como imagen</button>
+    </div>
 
     <div class="container">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -70,34 +100,9 @@
             <img src="https://cdn-icons-png.flaticon.com/512/992/992703.png" alt="Scroll to Top"
                 style="width: 30px; height: auto;">
         </button>
-        <div style="margin-top: 20px;"></div>
-        <div class="container">
-            <div style="margin-bottom: 20px;">
-                <label for="colorPicker">Color del borde inferior:</label>
-                <input type="color" id="colorPicker" value="#0000ff">
-                <input type="text" id="colorCode" value="#0000ff" readonly>
-            </div>
-            <button id="addRowBtn" class="btn btn-primary mb-3">Añadir Fila</button>
-            <button id="download-btn" class="btn btn-primary mb-3">Descargar build order como imagen</button>
 
-            <table class="table custom-table">
-                <thead>
-                    <tr>
-                        <th scope="col" class="resources"><img src="/assets/hud/timetobuild.png" alt="Time to Build">
-                        </th>
-                        <th scope="col" class="resources"><img src="/assets/hud/FoodAOM.png" alt="Food"></th>
-                        <th scope="col" class="resources"><img src="/assets/hud/WoodAOM.png" alt="Wood"></th>
-                        <th scope="col" class="resources"><img src="/assets/hud/GoldAOM.png" alt="Gold"></th>
-                        <th scope="col" class="resources"><img src="/assets/hud/FavorAOM.png" alt="Favor"></th>
-                        <th scope="col" class="editable" contenteditable="true"><b>BUILD ORDER</b></th>
-                    </tr>
-                </thead>
-                <tbody class="table-group-divider">
 
-                </tbody>
-            </table>
-        </div>
-        <div style="margin-top: 180px;"></div>
+        <div class="container" style="margin-top: 180px;"></div>
         <footer class="bg-dark text-white py-4">
             <div class="container">
                 <div class="row mb-4">
