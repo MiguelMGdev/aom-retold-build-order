@@ -216,14 +216,16 @@
                 event.dataTransfer.setData('text/plain', event.target.src);
             });
         });
-        document.getElementById('download-btn').addEventListener('click', () => {
-            html2canvas(document.querySelector('.custom-table')).then(canvas => {
-                const link = document.createElement('a');
-                link.href = canvas.toDataURL('image/png');
-                link.download = 'tabla.png';
-                link.click();
+        document.getElementById("download-btn").addEventListener("click", () => {
+            const table = document.querySelector(".custom-table");
+            html2canvas(table).then((canvas) => {
+              const link = document.createElement("a");
+              link.href = canvas.toDataURL("image/png");
+              link.download = "tabla.png";
+              link.click();
             });
-        });
+          });
+          
     </script>
 </body>
 
