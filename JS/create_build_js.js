@@ -12,6 +12,21 @@ document.addEventListener("DOMContentLoaded", () => {
       row.style.borderBottomColor = borderColor;
     });
   }
+  function addRow() {
+    const newRow = document.createElement("tr");
+    newRow.innerHTML = `
+        <th class="editable resources" contenteditable="true"></th>
+        <td class="editable resources" contenteditable="true"></td>
+        <td class="editable resources" contenteditable="true"></td>
+        <td class="editable resources" contenteditable="true"></td>
+        <td class="editable resources" contenteditable="true"></td>
+        <td class="editable build-order" contenteditable="true"></td>
+    `;
+    newRow.style.borderBottomColor = borderColor;
+    tbody.appendChild(newRow);
+    addDragEvents(newRow.querySelectorAll(".editable"));
+}
+  addRow();
 
   updateRowBorders();
 
@@ -20,6 +35,8 @@ document.addEventListener("DOMContentLoaded", () => {
     colorCode.value = borderColor;
     updateRowBorders();
   });
+
+  
 
   document.getElementById("addRowBtn").addEventListener("click", () => {
     const newRow = document.createElement("tr");
