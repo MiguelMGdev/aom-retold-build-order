@@ -24,12 +24,12 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("addRowBtn").addEventListener("click", () => {
     const newRow = document.createElement("tr");
     newRow.innerHTML = `
-            <th scope="row" class="editable resources" contenteditable="true"></th>
+            <th class="editable resources" contenteditable="true"></th>
             <td class="editable resources" contenteditable="true"></td>
             <td class="editable resources" contenteditable="true"></td>
             <td class="editable resources" contenteditable="true"></td>
             <td class="editable resources" contenteditable="true"></td>
-            <td class="editable" contenteditable="true"></td>
+            <td class="editable build-order" contenteditable="true"></td>
         `;
     newRow.style.borderBottomColor = borderColor;
     tbody.appendChild(newRow);

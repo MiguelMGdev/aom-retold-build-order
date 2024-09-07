@@ -2,6 +2,8 @@ body {
   background-color: #121212;
   color: #e0e0e0;
   font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-tabs .nav-link {
@@ -11,6 +13,7 @@ body {
   border-radius: 0;
   margin-right: 5px;
   padding: 10px 15px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .nav-tabs .nav-link.active {
@@ -53,28 +56,6 @@ body {
   transform: scale(1.1);
 }
 
-.custom-table td img,
-.custom-table th img {
-  width: 30px;
-  height: auto;
-  vertical-align: middle;
-  margin-left: 8px;
-}
-
-.dragged-image {
-  width: 30px;
-  height: auto;
-  vertical-align: middle;
-  border: 1px solid #333;
-  border-radius: 5px;
-}
-
-.image-selector img:hover {
-  border-color: #555;
-  transform: scale(1.5);
-  transition: transform 0.3s, border-color 0.3s;
-}
-
 .custom-table {
   width: 100%;
   border-collapse: collapse;
@@ -86,16 +67,11 @@ body {
 }
 
 .custom-table th {
-  border: none;
   padding: 12px;
   text-align: center;
   vertical-align: middle;
   background-color: #333;
   color: #ffffff;
-}
-
-.custom-table th:nth-child(6) {
-  text-align: center;
 }
 
 .custom-table th img {
@@ -111,17 +87,33 @@ body {
   color: #e0e0e0;
 }
 
-.custom-table td:nth-child(6),
-.custom-table th:nth-child(6) {
-  text-align: center;
+.custom-table td img {
+  width: 30px;
+  height: auto;
+  vertical-align: middle;
+  margin: 0 8px;
 }
 
 .custom-table tbody tr {
   border-bottom: 3px solid #0000ff;
+  transition: background-color 0.3s;
+}
+
+.custom-table tbody tr:hover {
+  background-color: #333;
+}
+
+.build-order td {
+  text-align: left;
+}
+
+.build-order td img {
+  margin-left: 0;
 }
 
 .editable {
   outline: none;
+  white-space: nowrap;
 }
 
 .input-text {
@@ -131,16 +123,8 @@ body {
   padding: 6px;
   font-size: 14px;
   border-radius: 4px;
-}
-
-.editable {
-  white-space: nowrap;
-}
-
-.custom-table td img,
-.custom-table th img {
-  vertical-align: middle;
-  margin-left: 8px;
+  background-color: #1e1e1e;
+  color: #e0e0e0;
 }
 
 .resources {
@@ -155,6 +139,30 @@ body {
   justify-content: center;
 }
 
-.custom-table tbody tr:hover {
-  background-color: #333;
+.dragged-image {
+  width: 30px;
+  height: auto;
+  vertical-align: middle;
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+
+th.build-order {
+  text-align: center;
+}
+
+th.build-order img {
+  display: inline-block;
+  margin: 0;
+  vertical-align: middle;
+}
+
+td.build-order {
+  text-align: left;
+}
+
+td.build-order img {
+  display: inline-block;
+  margin: 0;
+  vertical-align: middle;
 }
